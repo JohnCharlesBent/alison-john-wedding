@@ -6,7 +6,7 @@ include ('inc/header.php');
  ?>
 <div id="content-wrap">
  <section id="welcome">
-   <img src="images/jb_ag_logo.png" alt="John Bent and Alison Green Wedding logo" />
+   <img src="images/jb_ag_logo.png" alt="John Bent and Alison Green Wedding logo" class="logo"/>
    <h1>Alison Mara Green and John Bent are getting married!</h1>
  </section>
 
