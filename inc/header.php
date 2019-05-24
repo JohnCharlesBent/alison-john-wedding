@@ -16,6 +16,7 @@
      <meta name="author" content="John Bent">
      <meta name="description" content="Alison Mara Green and John Charles Bent are getting married! RSVP on this page!">
      <meta name="keywords" content="John, Alison, Wedding, Providence RI, 2019">
+     <link rel="stylesheet" href="https://use.typekit.net/yvc7wju.css">
      <link rel="stylesheet" href="css/style.css" type="text/css">
    </head>
 
