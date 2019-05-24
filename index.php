@@ -4,9 +4,14 @@
 **/
 include ('inc/header.php');
  ?>
+<div id="content-wrap">
+ <section id="welcome"></section>
 
-<h1>You're invited to Alison and John's Wedding</h1>
+ <section id="details"></section>
 
- <?php
- include ('inc/footer.php');
-  ?>
+ <section id="rsvp"></section>
+
+</div>
+<?php
+include ('inc/footer.php');
+?>
