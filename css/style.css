@@ -8,7 +8,7 @@ html,body {
 }
 
 body {
-  background: #ea0a8c;
+  background: rgba(234,10,140, .7);
 }
 
 section {
@@ -17,7 +17,6 @@ section {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  border-bottom: solid thin #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -29,6 +28,28 @@ h1,h2,h3,h4,h5,h6 {
 img {
   max-width: 100%;
   width: 100%
+}
+
+section#welcome {
+  background-image: url('../images/welcome-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h1.welcome-header {
+  font-size: 3rem;
+  width: 30%;
+  text-align: center;
+}
+
+h1.welcome-header span {
+  font-size: 4.2rem;
+  display: inline-block;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-top: .5rem;
+  transform: rotate(-15deg);
 }
 
 section#welcome img.logo {
