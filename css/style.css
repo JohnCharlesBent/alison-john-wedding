@@ -5,6 +5,7 @@
 html,body {
   margin: 0;
   paddin: 0;
+  height: 100%;
 }
 
 body {
@@ -13,14 +14,35 @@ body {
 
 section {
   height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-h1,h2,h3,h4,h5,h6 {
+div.inner-wrap {
+  position: relative:
+  bottom: 0;
+  max-width: 1200px;
+}
+
+.eloquent-jf-pro {
   font-family: eloquent-jf-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gothic-open {
+  font-family: gothic-open-shaded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.coquette {
+  font-family: coquette, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hwt-catchwords {
+  font-family: hwt-catchwords, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -35,15 +57,18 @@ section#welcome {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 h1.welcome-header {
-  font-size: 3rem;
+  font-size:3.5rem;
   width: 35%;
   text-align: center;
-  background: rgba(234,10,140, .7);
   padding: 1rem;
-  color: #fff;
+  line-height: 1.3;
 }
 
 h1.welcome-header span {
@@ -57,4 +82,52 @@ h1.welcome-header span {
 section#welcome img.logo {
   max-width: 600px;
   min-width: 300px;
+}
+
+.down-section {
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  padding: 1rem;
+  border: solid thin #000;
+  border-radius: 6px;
+}
+
+.down-section:hover {
+  border: solid thin #fff;
+  background: #fff;
+  color:  rgba(234,10,140, 1);
+}
+
+.down-section i {
+  display: block;
+}
+
+section#details div.inner-wrap {
+  height: 100%;
+  margin: 0 auto;
+}
+
+section#details div.inner-wrap .section-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section#details div.inner-wrap .section-content .text-content {
+  width: calc(66.66% - 1rem)
+  margin-left: 1rem;
+  padding: 1rem;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0% 38%);
+  background: #ffcc32;
+
+}
+
+section#details div.inner-wrap .section-content img {
+  max-width: 600px;
 }
