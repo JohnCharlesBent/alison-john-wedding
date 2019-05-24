@@ -39,7 +39,7 @@ section#welcome {
 
 h1.welcome-header {
   font-size: 3rem;
-  width: 30%;
+  width: 35%;
   text-align: center;
 }
 
@@ -47,9 +47,8 @@ h1.welcome-header span {
   font-size: 4.2rem;
   display: inline-block;
   margin-left: .5rem;
-  margin-right: .5rem;
   margin-top: .5rem;
-  transform: rotate(-45deg);
+  transform: rotate(-50deg);
 }
 
 section#welcome img.logo {
