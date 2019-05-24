@@ -41,6 +41,9 @@ h1.welcome-header {
   font-size: 3rem;
   width: 35%;
   text-align: center;
+  background: rgba(234,10,140, .7);
+  padding: 1rem;
+  color: #fff;
 }
 
 h1.welcome-header span {
