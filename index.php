@@ -3,6 +3,8 @@
 * This is a quick little website for my wedding invitation. Mostly just to present information and collect RSVP data
 **/
 include ('inc/header.php');
+$park = urlencode('Prospect Terrace Park Congdon St, Providence, RI 02906');
+$riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
  ?>
 <div id="content-wrap">
  <section id="welcome">
@@ -29,7 +31,9 @@ include ('inc/header.php');
           </div>
           <div class="ceremony">
               Prospect Park Terrace<br>
-              Providence, RI
+              <span class="address">
+                <a href="https://www.google.com/maps/search/?api=1&query=<?php echo $park; ?>" target="_blank">Congdon St, Providence, RI 02906</a>
+              </span>
             </div>
           <div class="details-header">
             <span class="gothic">Reception</span> <span class="coquette"> - 5:00 pm</span>
@@ -38,8 +42,17 @@ include ('inc/header.php');
         <div class="reception">
           RiffRaff - Bookstore / Bar
         <span class="small-text">A light dinner and drinks will be served</span>
+        <span class="address">
+          <a href="https://www.google.com/maps/search/?api=1&query=<?php echo $riffRaff; ?>" target="_blank">60 Valley St #107A, Providence, RI 02909</a>
+        </span>
       </div>
       </div>
+ </section>
+
+ <section id="boombox">
+   <div class="gothic titled">Karaoke After Party</div>
+    <div class="microphone"><?php include('inc/karaoke.svg'); ?></div>
+   <h2 class="gothic titled">The Boombox <span class="coquette">8:00 - ???</span></h2>
  </section>
 
  <section id="rsvp"></section>

@@ -90,7 +90,8 @@ section#details {
   .text-content {
     width: calc(33.33%);
     background: $yellow;
-    height: 60%;
+    max-width: 500px;
+    height: 75%;
     margin-top: auto;
     position: relative;
     -webkit-border-top-left-radius: 26px;
@@ -101,12 +102,17 @@ section#details {
     h2 {
       font-size: 6rem;
       margin-left: 3rem;
+      margin-top: 10rem;
     }
 
     .details-text {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+
 
       .details-header {
-        font-size: 2rem;
+        font-size: 2.5rem;
         background: $golden;
         margin-left: -2rem;
         padding: 1rem;
@@ -130,10 +136,69 @@ section#details {
         span {
           display: block;
         }
+        span.address {
+          font-size: 1rem;
+          margin-top: 1rem;
+          color: $pink;
+          padding: .5rem 1rem;
+          border: solid thin $pink;
+          border-radius: 26px;
+          max-width: 350px;
+          text-align: center;
+          background: $pinkGray;
+          margin-bottom: 1rem;
+          a {
+            text-decoration: none;
+          }
+        }
         .small-text {
+          margin-top: 1rem;
           font-size: 1.5rem;
         }
       }
     }
   }
 }
+
+section#boombox {
+  background: darken($purple, 20%);
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+
+  .titled {
+      font-size: 4rem;
+      transform: rotate(-20deg);
+      color: $yellow;
+
+      span {
+        padding: 1rem 2rem;
+        background: $yellow;
+        display: inline-block;
+        color: darken($purple, 20%);
+      }
+  }
+
+  .microphone {
+    margin-top: 3rem;
+    width: calc(50% - 1rem);
+    max-width: 500px;
+    margin-bottom: 1rem;
+    display: block;
+    svg {
+      -webkit-animation: fadeInOut 3s infinite;
+      -moz-animation: fadeInOut 3s infinite;
+      animation: fadeInOut 3s infinite;
+      g {
+        path {
+          fill: $yellow;
+        }
+      }
+    }
+  }
+}
+
+@-moz-keyframes fadeInOut { 0% {opacity: 0;} 100%{ opacity: 1;} }
+@-webkit-keyframes fadeInOut {  0% {opacity: 0;} 100%{ opacity: 1;} }
+@keyframes fadeInOut {  0% {opacity: 0;} 100%{ opacity: 1;} }
