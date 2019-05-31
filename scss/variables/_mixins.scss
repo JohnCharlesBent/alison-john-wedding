@@ -7,3 +7,9 @@
     border: solid thin $color;
   }
 }
+
+@mixin rotate($time) {
+  -webkit-animation:spin $time linear infinite;
+  -moz-animation:spin $time linear infinite;
+  animation:spin $time linear infinite;
+}
