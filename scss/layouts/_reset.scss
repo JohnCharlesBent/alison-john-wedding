@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $proximaNova;
+}
+html, body {
+  height: 100%;
+}
+a {
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding:0;
+
+  li {
+    list-style: none;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.eloquent {
+  font-family: $eloquent;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gothic {
+  font-family: $gothic;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.coquette {
+  font-family: $coquette;
+  font-weight: 400;
+  font-style: normal;
+}

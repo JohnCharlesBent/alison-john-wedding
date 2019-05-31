@@ -18,7 +18,7 @@
      <meta name="keywords" content="John, Alison, Wedding, Providence RI, 2019">
      <link rel="stylesheet" href="https://use.typekit.net/yvc7wju.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="dist/css/style.css" type="text/css">
    </head>
 
    <body>

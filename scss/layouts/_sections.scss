@@ -1,0 +1,134 @@
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+section#welcome {
+  background-image: url('../../images/welcome-background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $pink;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  p.coquette {
+    font-size: 3rem;
+  }
+
+  .down-section {
+    position: absolute;
+    padding: 1rem;
+    border: solid thin #fff;
+    color: #fff;
+    border-radius: 6px;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    i {
+      display: block;
+    }
+    @include hover($pink, #fff);
+  }
+
+  h1 {
+    width: 40%;
+    max-width: 600px;
+    text-align: center;
+    span {
+      font-family: $hwt;
+      font-size: 4rem;
+      padding-top: 1rem;
+      display: inline-block;
+    }
+  }
+}
+
+section#details {
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: bottom;
+  background-image:url('../../images/pvd_bg.jpg');
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $ltPink;
+
+  .image {
+    width: calc(33.33% - 1rem);
+    margin: 0 .5rem 0 0;
+    img {
+      height: 100%;
+    }
+  }
+
+  .join_us {
+    width: calc(33.33% - 1rem);
+    margin: 1rem;
+    #join_us {
+      -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
+      filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
+    }
+  }
+
+  .text-content {
+    width: calc(33.33%);
+    background: $yellow;
+    height: 60%;
+    margin-top: auto;
+    position: relative;
+    -webkit-border-top-left-radius: 26px;
+    -moz-border-radius-topleft: 26px;
+    border-top-left-radius: 26px;
+    align-self: flex-end;
+
+    h2 {
+      font-size: 6rem;
+      margin-left: 3rem;
+    }
+
+    .details-text {
+
+      .details-header {
+        font-size: 2rem;
+        background: $golden;
+        margin-left: -2rem;
+        padding: 1rem;
+        display: block;
+        min-width: 300px;
+        max-width: 500px;
+        text-align: center;
+
+        span.coquette {
+          font-family: $coquette;
+          display: inline-block;
+          font-size: 3rem;
+        }
+      }
+      .ceremony, .reception {
+        font-family: $coquette;
+        margin-left: 3rem;
+        padding-top:1rem;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+        span {
+          display: block;
+        }
+        .small-text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

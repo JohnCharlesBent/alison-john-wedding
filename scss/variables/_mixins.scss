@@ -1,0 +1,9 @@
+@mixin hover($color, $background) {
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: $background;
+    color: $color;
+    border: solid thin $color;
+  }
+}
