@@ -21,6 +21,7 @@ $other_guests_names = mysqli_real_escape_string($conn, $_POST['other_guests_name
 $dietary_restrictions = mysqli_real_escape_string($conn, $_POST['dietary_restrictions']);
 $comments = mysqli_real_escape_string($conn, $_POST['comments']);
 
+var_dump($dietary_restrictions);
 
 $sql = "INSERT INTO rsvp (`first_name_last_name`, `attending` ,`other_guests`, `number_of_guests`, `other_guest_names`, `dietary_restrictions`, `comments`) VALUES ('$name', '$attending', '$other_guests', '$number_of_guests', '$other_guests_names', '$dietary_restrictions', '$comments')";
 

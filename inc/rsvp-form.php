@@ -35,7 +35,7 @@
   <div class="form-row" required>
     <label for="name">Please List Any Dietary Restrictions <span class="required_field">*</span></label>
     <span class="note">A light dinner will be provided. Vegetarian options will be available. Please enter N/A if there are no dietary restrictions we need to consider.</span>
-    <textarea name="dietary_restrctions" id="dietary_restrictions" class="formEl"></textarea>
+    <textarea name="dietary_restrictions" id="dietary_restrictions" class="formEl"></textarea>
   </div>
   <div class="form-row">
     <label for="name">Comments</label>
