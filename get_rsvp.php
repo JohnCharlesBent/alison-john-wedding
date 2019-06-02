@@ -21,7 +21,7 @@ header('Content-Disposition: attachement; filename=rsvp.csv');
 
 $output = fopen("php://output", "w");
 
-fputcsv($output, array('ID', 'Email','Name', 'Are You Attending', 'Other Guests?', 'Number Of Other Guests', 'Other Guests Names', 'Dietary Restrictions', 'Comments'));
+fputcsv($output, array('ID', 'Name', 'Email', 'Are You Attending', 'Other Guests?', 'Number Of Other Guests', 'Other Guests Names', 'Dietary Restrictions', 'Comments'));
 
 while($row = mysqli_fetch_assoc($result))
 {

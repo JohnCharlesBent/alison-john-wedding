@@ -13,7 +13,7 @@
   </div>
   <div class="form-row">
     <label for="email">Your Email</label>
-    <input type="email" name="email" id="email" />
+    <input type="text" name="email" id="email" class="formEl"/>
   </div>
   <div class="form-row">
     <label for="attending">Are you planning to attend? <span class="required_field">*</span></label>

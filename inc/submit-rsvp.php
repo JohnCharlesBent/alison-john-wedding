@@ -10,8 +10,6 @@ $conn = mysqli_connect($server, $un, $pw, $db);
 if($conn->connection_error) {
   die("Could not connect to database " . $conn->connect_error);
 }
-$data = $_POST;
-
 $name = mysqli_real_escape_string($conn, $_POST['name']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $attending = mysqli_real_escape_string($conn, $_POST['attending']);
