@@ -1,8 +1,12 @@
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   position: relative;
+
+  @include mobile() {
+    height: auto;
+  }
 }
 
 section#welcome {
@@ -16,13 +20,29 @@ section#welcome {
   align-items: center;
   position: relative;
 
+  @include mobile() {
+    height: 100vh;
+  }
+
   img {
     width: 100%;
     max-width: 600px;
+
+    @include mobile() {
+      width: 80%;
+      margin: 2rem auto 0 auto;
+    }
   }
 
   p.coquette {
     font-size: 3rem;
+
+    @include mobile() {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+    }
+
   }
 
   .down-section {
@@ -38,6 +58,10 @@ section#welcome {
       display: block;
     }
     @include hover($pink, #fff);
+
+    @include mobile() {
+      font-size: 1rem;
+    }
   }
 
   h1 {
@@ -49,6 +73,15 @@ section#welcome {
       font-size: 4rem;
       padding-top: 1rem;
       display: inline-block;
+      @include mobile() {
+        font-size: 3rem;
+      }
+    }
+
+    @include mobile {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 2rem;
     }
   }
 }
@@ -65,21 +98,45 @@ section#details {
   background-repeat: no-repeat;
   background-color: $ltPink;
 
+  @include mobile() {
+    background-size: cover;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .image {
     width: calc(33.33% - 1rem);
     margin: 0 .5rem 0 0;
     img {
       height: 100%;
     }
+
+    @include mobile {
+      display: none;
+      width: 0;
+    }
   }
 
   .join_us {
     width: calc(33.33% - 1rem);
     margin: 1rem;
+
+    @include mobile() {
+      width: calc(100% - 2rem);
+      margin: 1rem auto;
+      max-width: 300px;
+    }
+
+    svg#join_us {
+      max-width: 500px;
+      align-self: center;
+      margin-top: 2rem;
+    }
   }
 
   .text-content {
-    width: calc(33.33%);
+    width: calc(33.33% - 1rem);
     background: $yellow;
     max-width: 500px;
     height: 75%;
@@ -90,10 +147,26 @@ section#details {
     border-top-left-radius: 26px;
     align-self: flex-end;
 
+    @include mobile() {
+      width: 100%;
+      height: auto;
+      min-width: 0;
+      max-width: 0;
+      border-radius: 0px;
+      align-self: flex-start;
+      margin-top: 0;
+      background: $yellow;
+    }
+
     h2 {
       font-size: 6rem;
       margin-left: 3rem;
       margin-top: 10rem;
+      @include mobile() {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 0;
+      }
     }
 
     .details-text {
@@ -101,6 +174,9 @@ section#details {
       flex-flow: column nowrap;
       justify-content: flex-start;
 
+      @include mobile() {
+        display: block;
+      }
 
       .details-header {
         font-size: 2.5rem;
@@ -112,10 +188,20 @@ section#details {
         max-width: 500px;
         text-align: center;
 
+        @include mobile() {
+          margin-left: 0;
+          max-width: none;
+          width: 100%;
+          font-size: 1.5rem;
+        }
+
         span.coquette {
           font-family: $coquette;
           display: inline-block;
           font-size: 3rem;
+          @include mobile() {
+            font-size: 2rem;
+          }
         }
       }
       .ceremony, .reception {
@@ -138,6 +224,10 @@ section#details {
           text-align: center;
           background: $pinkGray;
           margin-bottom: 1rem;
+
+          @include mobile() {
+            max-width: none;
+          }
           a {
             text-decoration: none;
           }
@@ -163,11 +253,21 @@ section#boombox {
       transform: rotate(-20deg);
       color: $yellow;
 
+      @include mobile() {
+        font-size: 2rem;
+      }
+
       span {
         padding: 1rem 2rem;
         background: $yellow;
         display: inline-block;
         color: #000;
+
+        @include mobile() {
+          padding: 0;
+          background: transparent;
+          color: $yellow;
+        }
       }
   }
 

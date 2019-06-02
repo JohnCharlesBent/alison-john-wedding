@@ -23,9 +23,9 @@ $comments = mysqli_real_escape_string($conn, $_POST['comments']);
 $sql = "INSERT INTO rsvp (`first_name_last_name`, `attending` ,`other_guests`, `number_of_guests`, `other_guest_names`, `dietary_restrictions`, `comments`) VALUES ('$name', '$attending', '$other_guests', '$number_of_guests', '$other_guests_names', '$dietary_restrictions', '$comments')";
 
 if($conn->query($sql) === TRUE) {
-  echo json_encode("Your RSVP has been submitted. Thanks so much! We're looking forward to celebrating with you soon.");
+  echo json_encode('Your RSVP has been submitted. Thanks so much! We\'re looking forward to celebrating with you soon.');
 } else {
-  echo json_encode("There has been an error with your form submission. Error: " . $sql . " | " . $conn->error);
+  echo json_encode('There has been an error with your form submission. Error: ' . $sql . ' | ' . $conn->error);
 }
 
 $conn->close();

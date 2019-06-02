@@ -1,3 +1,4 @@
+
 function submitRSVP() {
 
   var elements = document.getElementsByClassName("formEl");
@@ -11,7 +12,13 @@ function submitRSVP() {
   {
     if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
     {
-      console.log(xmlHttp.responseText);
+      var form = document.getElementById("rsvp_form").style.display = "none";
+      var response = JSON.parse(xmlHttp.responseText);
+      //alert(response);
+      var message = document.getElementById("form-success-message");
+      var msgTxt = document.createTextNode(response);
+      message.appendChild(msgTxt);
+      message.classList.remove("hidden");
     }
   }
   xmlHttp.open("POST", "inc/submit-rsvp.php");
@@ -25,3 +32,21 @@ rsvpBtn.addEventListener("click", function(e) {
   e.preventDefault();
   submitRSVP();
 });
+
+var otherGuest = document.getElementById("other_guests_select");
+
+otherGuest.onchange = function() {
+  var val = otherGuest.options[otherGuest.selectedIndex].value;
+
+  if(val === 'yes') {
+    var optional = document.getElementsByClassName("optional");
+    console.log(optional);
+    for(var i = 0; optional.length; i++) {
+        optional[i].style.display = "block";
+        return;
+    }
+  } else {
+    return;
+  }
+
+}

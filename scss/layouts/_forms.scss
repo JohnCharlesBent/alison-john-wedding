@@ -7,13 +7,27 @@ form#rsvp_form {
   border-radius: 6px;
   @include dropshadow();
 
+  @include mobile() {
+    width: 95%;
+    padding: 1rem;
+  }
+
   div.form-row {
+    margin-bottom: 1rem;
     label {
       display: block;
       font-family: $eloquent;
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
       margin-top: 1rem;
+
+      span.required_field {
+        color: $pink;
+      }
+
+      @include mobile() {
+        font-size: 1.2rem;
+      }
     }
     input[type="text"], textarea, input[type="number"] {
       padding: 1rem;
@@ -23,6 +37,9 @@ form#rsvp_form {
       background: $pinkGray;
       color: $pink;
       font-size: 1.5rem;
+      @include mobile() {
+        width: 100%;
+      }
     }
     input[type="number"] {
       max-width: 80px;
@@ -40,6 +57,9 @@ form#rsvp_form {
       font-size: 1.2rem;
       border: solid thin $pink;
       border-radius: 4px;
+      @include mobile() {
+        width: 100%;
+      }
       option {
         display: block;
         margin-top: .25rem;
@@ -61,4 +81,48 @@ form#rsvp_form {
   .optional {
     display: none;
   }
+  input[type="submit"] {
+    padding: .5rem 1rem;
+    background: $pink;
+    color: $pinkGray;
+    border-radius: 26px;
+    font-size: 1.5rem;
+    font-family: $coquette;
+    border: solid thin transparent;
+    min-width: 250px;
+    text-align: center;
+
+    @include hover($pink, #fff);
+
+  }
+}
+
+#form-success-message, #form-error-message {
+  display: block;
+  height: auto;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: $ltPink;
+  font-family: $coquette;
+  font-size: 2rem;
+  @include dropshadow();
+  border-radius: 4px;
+  text-align: center;
+  svg#glasses {
+    width: 75px;
+    height: auto;
+    display: block;
+    margin: .5rem auto;
+      path.st0 {
+        fill: $yellow;
+        clip-path: none;
+      }
+  }
+}
+
+#form-success-message.hidden, #form-error-message.hidden {
+  display: none;
+  height: 0;
 }
