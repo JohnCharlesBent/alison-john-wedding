@@ -9,11 +9,15 @@
   </div>
   <div class="form-row">
     <label for="name">First and Last Name <span class="required_field">*</span></label>
-    <input type="text" name="name" id="name" class="formEl" required>
+    <input type="text" name="name" id="name" class="formEl" required="required">
+  </div>
+  <div class="form-row">
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" />
   </div>
   <div class="form-row">
     <label for="attending">Are you planning to attend? <span class="required_field">*</span></label>
-    <select name="attending" id="attending" class="formEl" required>
+    <select name="attending" id="attending" class="formEl" required="required">
       <option disabled selected></option>
       <option value="yes">Yes! Yes! A thousand times YES!</option>
       <option value="no">Not this time. I'll try to make the recommitment ceremony in 20 years</option>
@@ -21,7 +25,7 @@
   </div>
   <div class="form-row">
     <label for="other_guests_select">Will You Be Bringing Other Guest?</label>
-    <select id="other_guests_select" class="formEl" name="other_guests" required>
+    <select id="other_guests_select" class="formEl" name="other_guests" required="required">
       <option disabled selected></option>
       <option value="yes">Yes</option>
       <option value="no">No</option>

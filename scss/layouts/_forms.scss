@@ -29,7 +29,7 @@ form#rsvp_form {
         font-size: 1.2rem;
       }
     }
-    input[type="text"], textarea, input[type="number"] {
+    input[type="text"], textarea, input[type="number"], input[type="email"] {
       padding: 1rem;
       width: 80%;
       border: solid thin $pink;

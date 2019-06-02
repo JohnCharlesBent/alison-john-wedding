@@ -39,12 +39,11 @@ otherGuest.onchange = function() {
   var val = otherGuest.options[otherGuest.selectedIndex].value;
 
   if(val === 'yes') {
-    var optional = document.getElementsByClassName("optional");
+    var optional = document.querySelectorAll(".optional");
     console.log(optional);
-    for(var i = 0; optional.length; i++) {
-        optional[i].style.display = "block";
-        return;
-    }
+    optional.forEach(function(element) {
+      element.style.display = "block";
+    });
   } else {
     return;
   }
