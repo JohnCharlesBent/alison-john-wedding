@@ -32,6 +32,6 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 	gulp.watch('scss/**/*.scss', ['sass']);
 	gulp.watch('js/*.js', ['minify-js']);
 	gulp.watch('*.php', browserSync.reload);
-	gulp.watch('/inc/*.php', browserSync.reload);
+	gulp.watch('inc/*.php', browserSync.reload);
 	gulp.watch('js/*.js', browserSync.reload);
 })

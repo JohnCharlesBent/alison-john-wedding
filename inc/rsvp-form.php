@@ -3,8 +3,11 @@
 *  Form displayed to submit RSVP info
 **/
 ?>
-<form>
-  <div class="form-row" action="inc/submit-rsvp.php">
+<form id="rsvp_form" action="inc/submit-rsvp.php">
+  <div class="form-row rsvp-message">
+    Let us know if you plan on coming! Use the form below to RSVP by July 15th, 2019.
+  </div>
+  <div class="form-row">
     <label for="name">First and Last Name <span class="required_field">*</span></label>
     <input type="text" name="name" id="name" class="formEl" required>
   </div>

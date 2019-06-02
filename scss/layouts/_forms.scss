@@ -1,0 +1,64 @@
+form#rsvp_form {
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: $ltPink;
+  border-radius: 6px;
+  @include dropshadow();
+
+  div.form-row {
+    label {
+      display: block;
+      font-family: $eloquent;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    input[type="text"], textarea, input[type="number"] {
+      padding: 1rem;
+      width: 80%;
+      border: solid thin $pink;
+      border-radius: 4px;
+      background: $pinkGray;
+      color: $pink;
+      font-size: 1.5rem;
+    }
+    input[type="number"] {
+      max-width: 80px;
+      padding: .5rem;
+      text-align: center;
+    }
+    textarea {
+      min-height: 200px;
+    }
+    select {
+      width: 80%;
+      padding: .5rem;
+      background: $pinkGray;
+      color: $pink;
+      font-size: 1.2rem;
+      border: solid thin $pink;
+      border-radius: 4px;
+      option {
+        display: block;
+        margin-top: .25rem;
+        border-bottom: solid thin $pink;
+      }
+    }
+    span.note {
+      display: block;
+      font-family: $coquette;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+  }
+  .rsvp-message {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: $coquette;
+  }
+  .optional {
+    display: none;
+  }
+}

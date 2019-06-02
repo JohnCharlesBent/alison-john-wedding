@@ -56,6 +56,8 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
  </section>
 
  <section id="rsvp">
+   <div class="form-success-message"></div>
+   <div class="form-error-message"></div>
    <?php include('inc/rsvp-form.php'); ?>
  </section>
 

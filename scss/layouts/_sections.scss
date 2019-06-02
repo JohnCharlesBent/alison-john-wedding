@@ -193,3 +193,13 @@ section#boombox {
 @-moz-keyframes fadeInOut { 0% {opacity: 0;} 100%{ opacity: 1;} }
 @-webkit-keyframes fadeInOut {  0% {opacity: 0;} 100%{ opacity: 1;} }
 @keyframes fadeInOut {  0% {opacity: 0;} 100%{ opacity: 1;} }
+
+
+section#rsvp {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background:url('../../images/crossline-lines.png');
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+}
