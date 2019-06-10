@@ -53,13 +53,13 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
  </section>
 
  <section id="rsvp">
-   <div id="form-success-message" class="hidden">
-     <?php include('inc/glasses.svg'); ?>
-   </div>
-   <div id="form-error-message" class="hidden"></div>
    <div class="dove-left">
      <?php include('inc/dove.svg'); ?>
   </div>
+  <div id="form-success-message" class="hidden">
+    <?php include('inc/glasses.svg'); ?>
+  </div>
+  <div id="form-error-message" class="hidden"></div>
    <?php include('inc/rsvp-form.php'); ?>
    <div class="dove-right">
      <?php include('inc/dove.svg'); ?>
@@ -72,9 +72,9 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
    <h2 class="gothic titled">The Boombox <span class="coquette">8:00 - ???</span></h2>
  </section>
 
- <section id="pvd">
-   <?php include('inc/pvd.php'); ?>
- </section>
+ <!--<section id="pvd">
+   <?php //include('inc/pvd.php'); ?>
+ </section>-->
 
 </div>
 <?php
