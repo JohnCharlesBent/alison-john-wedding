@@ -119,33 +119,38 @@ section#details {
   }
 
   .join_us {
-    width: calc(33.33% - 1rem);
-    margin: 1rem;
-
-    @include mobile() {
-      width: calc(100% - 2rem);
-      margin: 1rem auto;
-      max-width: 300px;
-    }
 
     svg#join_us {
-      max-width: 500px;
       align-self: center;
       margin-top: 2rem;
     }
   }
 
+  .right-side {
+    align-self: flex-end;
+    width: calc(66.66% - 4rem);
+    margin-left: 2rem;
+
+    .join_us {
+      max-width: 600px;
+      padding: 4rem;
+      align-self: center;
+      margin-left: auto;
+    }
+
+  }
+
   .text-content {
-    width: calc(33.33% - 1rem);
     background: $yellow;
-    max-width: 500px;
-    height: 75%;
     margin-top: auto;
     position: relative;
-    -webkit-border-top-left-radius: 26px;
-    -moz-border-radius-topleft: 26px;
-    border-top-left-radius: 26px;
-    align-self: flex-end;
+    margin-left: auto;
+    max-width: 600px;
+    padding: 2rem;
+    -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 100%);
+
+
 
     @include mobile() {
       width: 100%;
@@ -159,9 +164,10 @@ section#details {
     }
 
     h2 {
-      font-size: 6rem;
-      margin-left: 3rem;
-      margin-top: 10rem;
+      font-size: 3rem;
+      padding-top: 5rem;
+      margin-left: 1rem;
+      margin-top: 3rem;
       @include mobile() {
         font-size: 3rem;
         text-align: center;
@@ -224,6 +230,8 @@ section#details {
           text-align: center;
           background: $pinkGray;
           margin-bottom: 1rem;
+          transition: all .3s ease-in-out;
+          @include hover(#fff, $pink);
 
           @include mobile() {
             max-width: none;
@@ -242,7 +250,11 @@ section#details {
 }
 
 section#boombox {
-  background: #000;
+  background-color: rgba($purple, .8);
+  background-image: url('../../images/boombox.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -299,7 +311,34 @@ section#rsvp {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background:url('../../images/crossline-lines.png');
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-content: center;
   justify-content: center;
+
+  .dove-left, .dove-right {
+    max-width: 200px;
+    align-self: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    svg#dove {
+      g {
+        path {
+          fill: $purple;
+        }
+      }
+    }
+  }
+
+  .dove-right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+section#pvd {
+
 }

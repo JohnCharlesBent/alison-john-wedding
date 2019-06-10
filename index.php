@@ -11,7 +11,7 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
    <img src="images/jb_ag_logo.png" alt="John Bent and Alison Green Wedding logo" class="logo"/>
    <h1 class="welcome-header eloquent">Alison Green <span>d</span> John Bent are getting married!</h1>
    <p class="coquette">Sunday, August 31st, 2019</p>
-   <div class="down-section gothic">
+   <div id="detailScroll" class="down-section gothic">
      Details
      <i class="fas fa-arrow-down" aria-hidden="true"></i>
  </section>
@@ -20,12 +20,14 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
        <div class="image">
          <img src="images/Roger_Williams_statue.png" alt="Statue of Roger Williams in Prospect Terrace Park, Providence RI" />
       </div>
-      <div class="join_us">
-        <?php include('inc/join_us.svg'); ?>
-      </div>
-      <div class="text-content">
-        <h2 class="gothic">Details</h2>
-        <div class="details-text">
+
+      <div class="right-side">
+        <div class="join_us">
+          <?php include('inc/join_us.svg'); ?>
+        </div>
+        <div class="text-content">
+          <h2 class="gothic">Details</h2>
+          <div class="details-text">
           <div class="details-header">
             <span class="gothic">Ceremony</span> <span class="coquette"> - 4:00pm</span>
           </div>
@@ -39,14 +41,29 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
             <span class="gothic">Reception</span> <span class="coquette"> - 5:00 pm</span>
           </span>
         </div>
-        <div class="reception">
+          <div class="reception">
           RiffRaff - Bookstore / Bar
-        <span class="small-text">A light dinner and drinks will be served</span>
-        <span class="address">
-          <a href="https://www.google.com/maps/search/?api=1&query=<?php echo $riffRaff; ?>" target="_blank">60 Valley St #107A, Providence, RI 02909</a>
-        </span>
+          <span class="small-text">A light dinner and drinks will be served</span>
+          <span class="address">
+            <a href="https://www.google.com/maps/search/?api=1&query=<?php echo $riffRaff; ?>" target="_blank">60 Valley St #107A, Providence, RI 02909</a>
+          </span>
+        </div>
       </div>
-      </div>
+    </div>
+ </section>
+
+ <section id="rsvp">
+   <div id="form-success-message" class="hidden">
+     <?php include('inc/glasses.svg'); ?>
+   </div>
+   <div id="form-error-message" class="hidden"></div>
+   <div class="dove-left">
+     <?php include('inc/dove.svg'); ?>
+  </div>
+   <?php include('inc/rsvp-form.php'); ?>
+   <div class="dove-right">
+     <?php include('inc/dove.svg'); ?>
+  </div>
  </section>
 
  <section id="boombox">
@@ -55,12 +72,8 @@ $riffRaff = urlencode('Riff Raff 60 Valley St #107A, Providence, RI 02909');
    <h2 class="gothic titled">The Boombox <span class="coquette">8:00 - ???</span></h2>
  </section>
 
- <section id="rsvp">
-   <div id="form-success-message" class="hidden">
-     <?php include('inc/glasses.svg'); ?>
-   </div>
-   <div id="form-error-message" class="hidden"></div>
-   <?php include('inc/rsvp-form.php'); ?>
+ <section id="pvd">
+   <?php include('inc/pvd.php'); ?>
  </section>
 
 </div>

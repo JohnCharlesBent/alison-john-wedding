@@ -24,7 +24,7 @@
     </select>
   </div>
   <div class="form-row">
-    <label for="other_guests_select">Will You Be Bringing Other Guest?</label>
+    <label for="other_guests_select">Will You Be Bringing Other Guests?</label>
     <select id="other_guests_select" class="formEl" name="other_guests" required="required">
       <option disabled selected></option>
       <option value="yes">Yes</option>
