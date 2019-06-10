@@ -1,4 +1,14 @@
 footer {
   min-height: 50vh;
   background: #000;
+  padding: 3rem;
+  color: $yellow;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 4rem;
+  }
 }

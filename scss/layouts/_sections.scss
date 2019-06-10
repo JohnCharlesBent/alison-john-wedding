@@ -145,7 +145,7 @@ section#details {
     margin-top: auto;
     position: relative;
     margin-left: auto;
-    max-width: 600px;
+    max-width: 800px;
     padding: 2rem;
     -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 100%);
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 100%);
@@ -316,11 +316,12 @@ section#rsvp {
   justify-content: center;
 
   .dove-left, .dove-right {
-    max-width: 200px;
     align-self: center;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     svg#dove {
+      max-width: 200px;
       g {
         path {
           fill: $purple;
@@ -340,5 +341,20 @@ section#rsvp {
 }
 
 section#pvd {
+  background-color: $yellow;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 
+  .full-width {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .column_one, .column_two, .column_three {
+    width: calc(33.33% -2rem);
+    margin: 1rem;
+  }
 }
