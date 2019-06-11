@@ -3,7 +3,7 @@
 * Fetch all RSVPs from database and output as a CSV file, then download the file
 **/
 
-include('inc/cxn.php');
+include('../inc/cxn.php');
 
 $conn = mysqli_connect($server, $un, $pw, $db);
 
